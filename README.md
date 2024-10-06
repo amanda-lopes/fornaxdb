@@ -1,3 +1,1 @@
-Fornax Database
-
-A compilation of public data for galaxies observed in the area of the Fornax Cluster
+Here you can find a list of galaxies and its public data in different wavelenghts (optical, radio) 
