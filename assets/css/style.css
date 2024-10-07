@@ -1,0 +1,23 @@
+nav.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav.navbar ul li {
+  margin: 0 15px;
+}
+
+nav.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  background-color: #444;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+nav.navbar ul li a:hover {
+  background-color: #666;
+}
