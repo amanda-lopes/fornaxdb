@@ -3,12 +3,8 @@ layout: default
 title: Fornax Database
 ---
 
-<!-- Title and Description will be handled by the layout -->
-# Welcome to the Fornax Database
-
-Compilation of public data for galaxies in the area of the Fornax Cluster.
-
-<!-- Navigation Menu -->
+<!-- Title and description will be handled by the theme layout -->
+<!-- Add a navigation bar under the description -->
 <nav class="navbar">
   <ul>
     <li><a href="/">Home</a></li>
@@ -18,4 +14,4 @@ Compilation of public data for galaxies in the area of the Fornax Cluster.
   </ul>
 </nav>
 
-<!-- Additional content can go here -->
+<!-- Additional content can go below -->
