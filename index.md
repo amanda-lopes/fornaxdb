@@ -3,6 +3,11 @@ layout: default
 title: Fornax Database
 ---
 
+<!-- Title and Description will be handled by the layout -->
+# Welcome to the Fornax Database
+
+Compilation of public data for galaxies in the area of the Fornax Cluster.
+
 <!-- Navigation Menu -->
 <nav class="navbar">
   <ul>
@@ -12,3 +17,5 @@ title: Fornax Database
     <li><a href="/contact">Contact</a></li>
   </ul>
 </nav>
+
+<!-- Additional content can go here -->
