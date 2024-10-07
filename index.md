@@ -14,4 +14,6 @@ title: Fornax Database
   </ul>
 </nav>
 
+![Alt text](assets/images/eso1612a.jpg)
+
 <!-- Additional content can go below -->
