@@ -15,5 +15,5 @@ title: Fornax Database
 </nav>
 
 ![Alt text](assets/images/eso1612a.jpg)
-
+<p align="right">Credit image:ESO, Aniello Grado and Luca Limatola.</p>
 <!-- Additional content can go below -->
