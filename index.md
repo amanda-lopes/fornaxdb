@@ -3,9 +3,6 @@ layout: default
 title: Fornax Database
 ---
 
-# Fornax Database
-Compilation of public data for galaxies in the area of the Fornax Cluster.
-
 <!-- Navigation Menu -->
 <nav class="navbar">
   <ul>
