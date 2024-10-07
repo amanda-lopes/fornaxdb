@@ -8,9 +8,4 @@ body {
   color: #fff; /* Adjusts text color to be readable over the background */
 }
 
-/* Additional optional styling */
-.container {
-  background-color: rgba(0, 0, 0, 0.6); /* Adds a semi-transparent background for readability */
-  padding: 20px;
-  border-radius: 10px;
-}
+
