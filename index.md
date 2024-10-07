@@ -8,9 +8,9 @@ title: Fornax Database
 <nav class="navbar">
   <ul>
     <li><a href="/">Home</a></li>
-    <li><a href="/Spectroscopic data">spectra</a></li>
-    <li><a href="/IFU data">IFU</a></li>
-    <li><a href="/Optical photometry">optical_photo</a></li>
+    <li><a href="/Spectra">Spectroscopic data</a></li>
+    <li><a href="/MUSE_IFU">MUSE IFU</a></li>
+    <li><a href="/optical_photo">Optical photometry</a></li>
   </ul>
 </nav>
 
