@@ -1,0 +1,69 @@
+---
+layout: default
+title: Radial velocity confirmation
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSV to Table</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+</head>
+<body>
+
+  <button onclick="window.history.back();">Return</button>
+  <h1>Data Table</h1>
+  <table id="csv-table" border="1"></table>
+
+  <script>
+    // Log messages to ensure the script is working
+    console.log("Script is running");
+
+    // CSV file path (update if necessary)
+    const csvFilePath = 'https://raw.githubusercontent.com/amanda-lopes/fornaxdb/main/assets/vrad/literature_vrad.csv';
+
+    // Fetch CSV using Papa Parse
+    Papa.parse(csvFilePath, {
+      download: true,
+      header: true,
+      complete: function(results) {
+        console.log("CSV data successfully parsed");
+        console.log(results); // Log results to check if data is being fetched
+
+        var data = results.data;
+        var table = document.getElementById("csv-table");
+        
+        // If no data is fetched, log an error
+        if (!data || data.length === 0) {
+          console.error("No data found in the CSV file");
+          return;
+        }
+        
+        // Create the table headers
+        var thead = table.createTHead();
+        var row = thead.insertRow();
+        for (var key in data[0]) {
+          var th = document.createElement("th");
+          th.appendChild(document.createTextNode(key));
+          row.appendChild(th);
+        }
+        
+        // Create table rows for each data entry
+        data.forEach(function(item) {
+          var row = table.insertRow();
+          for (var key in item) {
+            var cell = row.insertCell();
+            cell.appendChild(document.createTextNode(item[key]));
+          }
+        });
+      },
+      error: function(error) {
+        console.error("Error parsing CSV:", error);
+      }
+    });
+  </script>
+
+</body>
+</html>
