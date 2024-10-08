@@ -3,15 +3,19 @@ layout: default
 title: Spectroscopic data
 ---
 
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Spectroscopic data</title>
-</head>
-<body> 
+  <title>CSV to Table</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+</head>
+<body>
+
+  <h1>Data Table</h1>
   <table id="csv-table" border="1"></table>
+
   <script>
     // Load CSV using Papa Parse
     Papa.parse('assets/data/data.csv', {
