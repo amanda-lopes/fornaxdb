@@ -13,16 +13,32 @@ title: Spectroscopic data
 </head>
 <body>
 
+  <h1>Data Table</h1>
   <table id="csv-table" border="1"></table>
 
   <script>
-    // Load CSV using Papa Parse
-    Papa.parse('assets/data/data.csv', {
+    // Log messages to ensure the script is working
+    console.log("Script is running");
+
+    // CSV file path (update if necessary)
+    const csvFilePath = 'https://raw.githubusercontent.com/amanda-lopes/fornaxdb/main/assets/data/data.csv';
+
+    // Fetch CSV using Papa Parse
+    Papa.parse(csvFilePath, {
       download: true,
       header: true,
       complete: function(results) {
+        console.log("CSV data successfully parsed");
+        console.log(results); // Log results to check if data is being fetched
+
         var data = results.data;
         var table = document.getElementById("csv-table");
+        
+        // If no data is fetched, log an error
+        if (!data || data.length === 0) {
+          console.error("No data found in the CSV file");
+          return;
+        }
         
         // Create the table headers
         var thead = table.createTHead();
@@ -33,7 +49,7 @@ title: Spectroscopic data
           row.appendChild(th);
         }
         
-        // Create table rows
+        // Create table rows for each data entry
         data.forEach(function(item) {
           var row = table.insertRow();
           for (var key in item) {
@@ -41,6 +57,9 @@ title: Spectroscopic data
             cell.appendChild(document.createTextNode(item[key]));
           }
         });
+      },
+      error: function(error) {
+        console.error("Error parsing CSV:", error);
       }
     });
   </script>
