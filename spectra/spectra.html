@@ -14,7 +14,7 @@ title: Spectroscopic data
 <body>
 
   <button onclick="window.history.back();">Return</button>
-  <h1>Data Table</h1>
+  <h1>Optical spectra</h1>
   <table id="csv-table" border="1"></table>
 
   <script>
@@ -22,7 +22,7 @@ title: Spectroscopic data
     console.log("Script is running");
 
     // CSV file path (update if necessary)
-    const csvFilePath = 'https://raw.githubusercontent.com/amanda-lopes/fornaxdb/main/assets/data/data.csv';
+    const csvFilePath = 'https://raw.githubusercontent.com/amanda-lopes/fornaxdb/main/assets/data/opt_spec.csv';
 
     // Fetch CSV using Papa Parse
     Papa.parse(csvFilePath, {
