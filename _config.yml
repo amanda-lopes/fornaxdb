@@ -1,6 +1,6 @@
 # Jekyll main configuration file
 title: S-PLUS Fornax Project (S+FP)
-description: "Compilation of public data for galaxies from the Fornax Cluster in the area covered by S-PLUS"
+description: "Compilation of public data for the Fornax Cluster in the area covered by S-PLUS"
 
 url: # (optional) https://example.com, defaults to http://localhost:4000 in development
 
